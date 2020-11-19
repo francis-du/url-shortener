@@ -1,0 +1,7 @@
+name = "shorten"
+type = "webpack"
+account_id = "7be466594a3b9a6f16b76f3ae64e842f"
+zone_id = "858e664a23feb5cfc78c1b213d5c4aab"
+route = "short.francis.run"
+webpack_config = "webpack.config.js"
+workers_dev =  false
