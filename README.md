@@ -1,8 +1,10 @@
+ <img src="https://simpleicons.org/icons/fujitsu.svg" width = "200" height = "200" alt="Logo" align=center />
+ 
 # URL-Shortener 
 
 ![What's it](https://img.shields.io/badge/What's%20it-orange?style=for-the-badge) 
 
-URL-Shortener is a simple url shortener that is build on Cloudflare Workers using Short.io API. 
+URL-Shortener is a simple url shortener that is build on Cloudflare Workers using Short.io API.
 
 [![index](src/images/index.png)](https://short.francis.run)
 
@@ -31,3 +33,5 @@ URL-Shortener is a simple url shortener that is build on Cloudflare Workers usin
 ![LICENSE](https://img.shields.io/badge/LICENSE-orange?style=for-the-badge)
 
 [MIT LICENSE](LICENSE)
+
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/YOURUSERNAME/YOURREPO)
