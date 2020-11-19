@@ -1,6 +1,10 @@
  <img src="https://simpleicons.org/icons/fujitsu.svg" width = "200" height = "200" alt="Logo" align=center />
  
-# URL-Shortener 
+ [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/YOURUSERNAME/YOURREPO)
+ 
+---
+ 
+# URL-Shortener  
 
 ![What's it](https://img.shields.io/badge/What's%20it-orange?style=for-the-badge) 
 
@@ -30,8 +34,4 @@ URL-Shortener is a simple url shortener that is build on Cloudflare Workers usin
 | ?title="" |title of created URL to be shown in short.cm admin panel | N |
 | ?path""  | optional path part of newly created link. If empty - it will be generated automatically | N |
 
-![LICENSE](https://img.shields.io/badge/LICENSE-orange?style=for-the-badge)
-
-[MIT LICENSE](LICENSE)
-
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/YOURUSERNAME/YOURREPO)
+[![MIT LICENSE](https://img.shields.io/badge/MIT%20LICENSE-orange?style=for-the-badge)](LICENSE)
