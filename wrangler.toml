@@ -1,7 +1,4 @@
-name = "shorten"
+name = "url-shortener"
 type = "webpack"
-account_id = ""
-zone_id = ""
-route = "short.francis.run"
 webpack_config = "webpack.config.js"
 workers_dev =  false
