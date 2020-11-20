@@ -1,6 +1,6 @@
  <img src="https://simpleicons.org/icons/fujitsu.svg" width = "200" height = "200" alt="Logo" align=center />
  
- [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/YOURUSERNAME/YOURREPO)
+ [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/francis-du/url-shortener)
  
 ---
  
