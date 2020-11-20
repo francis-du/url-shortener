@@ -13,11 +13,13 @@ module.exports = {
         extensions: ['.ts', '.tsx', '.js'],
         plugins: [],
     },
+    devtool: 'inline-source-map',
     module: {
         rules: [
             {
                 test: /\.tsx?$/,
                 loader: 'ts-loader',
+                exclude: /node-modules/,
                 options: {
                     transpileOnly: true,
                 },
