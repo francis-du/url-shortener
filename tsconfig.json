@@ -3,6 +3,7 @@
     "outDir": "./dist",
     "module": "commonjs",
     "target": "esnext",
+    "allowJs": true,
     "lib": [
       "esnext",
       "webworker",
