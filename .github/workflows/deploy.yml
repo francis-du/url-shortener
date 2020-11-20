@@ -11,9 +11,9 @@ jobs:
     name: Publish
     steps:
       - uses: actions/checkout@v2
+      - name: Add .env
+        run: echo -e "SHORT_SECRET_KEY=${{ secrets.SHORT_SECRET_KEY }}" -> .env
       - name: Publish
-        - name: run 
-          run: echo -e "SHORT_SECRET_KEY=${{ secrets.SHORT_SECRET_KEY }}" -> .env
         uses: cloudflare/wrangler-action@1.3.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
