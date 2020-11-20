@@ -8,7 +8,7 @@
 
 ![What's it](https://img.shields.io/badge/What's%20it-orange?style=for-the-badge) 
 
-URL-Shortener is a simple url shortener that is build on Cloudflare Workers using Short.io API.
+URL-Shortener is a simple app that is build on Cloudflare Workers using Short.io API.
 
 [![index](src/images/index.png)](https://short.francis.run)
 
