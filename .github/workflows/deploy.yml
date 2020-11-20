@@ -8,22 +8,10 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: Build
+    name: Publish
     steps:
       - uses: actions/checkout@v2
-      - name: build
+      - name: Publish
         uses: cloudflare/wrangler-action@1.3.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-          
-  publish:
-    runs-on: ubuntu-latest
-    name: Publish
-    steps:
-    - uses: actions/checkout@v2
-    - name: publish
-      uses: ./
-      with:
-        apiToken: ${{ secrets.CF_API_TOKEN }}
-        environment: "production"
-        workingDirectory: 'test'
