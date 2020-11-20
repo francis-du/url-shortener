@@ -11,7 +11,7 @@
 
 URL-Shortener is a simple app that is build on Cloudflare Workers using Short.io API.
 
-[![index](src/static/img/index.png)](https://short.francis.run)
+[![index](src/static/img/index.png)](https://short.francis.run/?link=https%3A%2F%2Ffrancis.run)
 
 ![Website](https://img.shields.io/badge/How%20to%20use-orange?style=for-the-badge)
 
