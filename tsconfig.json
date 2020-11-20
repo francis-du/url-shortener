@@ -3,7 +3,6 @@
     "outDir": "./dist",
     "module": "commonjs",
     "target": "esnext",
-    "allowJs": true,
     "lib": [
       "esnext",
       "webworker",
@@ -16,8 +15,7 @@
     "sourceMap": true,
     "esModuleInterop": true,
     "types": [
-      "@cloudflare/workers-types",
-      "webpack-env"
+      "@cloudflare/workers-types"
     ]
   },
   "include": [

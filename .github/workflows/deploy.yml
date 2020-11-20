@@ -5,15 +5,14 @@ on:
     branches:
       - main
 
-env: 
-  SHORT_SECRET_KEY: ${{ secrets.SHORT_SECRET_KEY }}
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
     name: Publish
     steps:
       - uses: actions/checkout@v2
+      - name: set env
+        run: echo SHORT_SECRET_KE=${{ secrets.SHORT_SECRET_KEY }} -> .env
       - name: Publish
         uses: cloudflare/wrangler-action@1.3.0
         with:

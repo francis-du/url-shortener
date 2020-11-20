@@ -1,5 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
+const dotenv = require("dotenv-webpack");
 
 const mode = process.env.NODE_ENV || 'production'
 
@@ -13,17 +14,24 @@ module.exports = {
         extensions: ['.ts', '.tsx', '.js'],
         plugins: [],
     },
-    devtool: 'inline-source-map',
     module: {
         rules: [
             {
                 test: /\.tsx?$/,
                 loader: 'ts-loader',
-                exclude: /node-modules/,
                 options: {
                     transpileOnly: true,
                 },
+            },
+            {
+                test: /\.env?$/,
+                loader: 'raw-loader',
             }
         ],
     },
+    plugins: [
+        new webpack.ProvidePlugin({
+          SHORT_SECRET_KEY: JSON.stringify(process.env.SHORT_SECRET_KEY)
+        })
+    ]
 }
