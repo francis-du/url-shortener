@@ -8,14 +8,15 @@ export const html = `
 
 // Generate short link
 export async function urlShorten(request: Request) {
-
     if(secret_key ==""){
         return echoShortUrl(rawHtmlResponse(), "Short.io API secret key is empty,please export SHORT_SECRET_KEY");
     }
 
+    const full_link = decodeURIComponent(request.url);
+
     // get params form url
-    const originalURL = getUrlArg(request.url, "link");
-    const path = getUrlArg(request.url, "path");
+    const originalURL = getUrlArg(full_link, "link");
+    const path = getUrlArg(full_link, "path");
     let title = "Shorten by https://short.francis.run";
     let api = false;
 
@@ -94,9 +95,8 @@ function getUrlArg(url: string, key: string): string {
 
 // Is it a valid link?
 function isNotLink(link: string) {
-    let str = decodeURI(link);
     const reg = new RegExp(re, "i");
-    return !reg.test(str);
+    return !reg.test(link);
 }
 
 // Rewrite html <p> tag content
