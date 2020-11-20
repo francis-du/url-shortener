@@ -8,15 +8,16 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <style type="text/css">
         body {
-            background: url(http://h2.ioliu.cn/bing/HallwylfjelletSunset_ZH-CN9300910376_1920x1200.jpg) no-repeat;
+            background: url(https://w.wallhaven.cc/full/dp/wallhaven-dpx573.png) no-repeat;
             background-size: cover;
             font-family: 'Open Sans', sans-serif;
-            font-size: 100%
+            font-size: 100%;
+            background-attachment:fixed;
         }
 
         .shorten {
             text-align: center;
-            margin: 25em 0 0 0;
+            margin: 20em 0 0 0;
             position: relative
         }
 
@@ -28,44 +29,38 @@
         .s-bar input[type="text"] {
             font-size: 1.2em;
             font-weight: 600;
-            color: #7a7777;
+            color:rgba(0, 0, 0, 0.452);
             padding: 1.3em 1em 1.3em 1.5em;
             width: 70%;
-            border-radius: 5px 0 0 5px;
-            -webkit-border-radius: 5px 0 0 5px;
-            -moz-border-radius: 5px 0 0 5px;
-            -o-border-radius: 5px 0 0 5px;
-            background: rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.479);
             border: 0;
             outline: 0;
-            -webkit-appearance: none
         }
 
         .s-bar input[type="submit"] {
             font-size: 1.2em;
             font-weight: 600;
-            color: #fff;
+            color: rgb(238, 227, 227);
             padding: 1.3em .5em;
             width: 22%;
             text-align: center;
-            text-shadow: rgba(80, 80, 80, 0.08) 1px 1px, rgba(80, 80, 80, 0.07) 2px 2px, rgba(80, 80, 80, 0.09) 3px 3px, rgba(80, 80, 80, 0.04) 4px 4px, rgba(80, 80, 80, 0.06) 5px 5px;
             border-radius: 0 5px 5px 0;
             -webkit-border-radius: 0 5px 5px 0;
             -moz-border-radius: 0 5px 5px 0;
             -o-border-radius: 0 5px 5px 0;
             margin: 0 0 0 -4px;
-            background: #A36058;
+            background: #4c6574;
             cursor: pointer;
             border: 0;
             outline: 0;
             -webkit-appearance: none;
-            background: #A36058;
-            background: -moz-linear-gradient(top, #A36058 0, #A36058 37%, #A36058 66%, #A36058 100%);
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #A36058), color-stop(37%, #A36058), color-stop(66%, #A36058), color-stop(100%, #A36058));
-            background: -webkit-linear-gradient(top, #A36058 0, #A36058 37%, #A36058 66%, #A36058 100%);
-            background: -o-linear-gradient(top, #A36058 0, #A36058 37%, #A36058 66%, #A36058 100%);
-            background: -ms-linear-gradient(top, #A36058 0, #A36058 37%, #A36058 66%, #A36058 100%);
-            background: linear-gradient(to bottom, #A36058 0, #A36058 37%, #A36058 66%, #A36058 100%);
+            background: #068a48c7;
+            background: -moz-linear-gradient(top, #068a48c7 0, #068a48c7 37%, #068a48c7 66%, #068a48c7 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #068a48c7), color-stop(37%, #068a48c7), color-stop(66%, #068a48c7), color-stop(100%, #068a48c7));
+            background: -webkit-linear-gradient(top, #068a48c7 0, #068a48c7 37%, #068a48c7 66%, #068a48c7 100%);
+            background: -o-linear-gradient(top, #068a48c7 0, #068a48c7 37%, #068a48c7 66%, #068a48c7 100%);
+            background: -ms-linear-gradient(top, #068a48c7 0, #068a48c7 37%, #068a48c7 66%, #068a48c7 100%);
+            background: linear-gradient(to bottom, #068a48c7 0, #068a48c7 37%, #068a48c7 66%, #068a48c7 100%);
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1fd8de', endColorstr='#1fd8de', GradientType=0)
         }
 
@@ -78,16 +73,12 @@
             -o-transition: all .3s ease
         }
 
-        .code {
+        .result {
             font-size: 1.3em;
-            font-weight: 600;
-            color: #d4d1d1;
-            padding: 1.3em 1em 1.3em 1.5em;
-            width: 100%;
-            text-shadow: rgba(80, 80, 80, 0.08) 1px 1px, rgba(80, 80, 80, 0.07) 2px 2px, rgba(80, 80, 80, 0.09) 3px 3px, rgba(80, 80, 80, 0.04) 4px 4px, rgba(80, 80, 80, 0.06) 5px 5px;
-            border-radius: 5px 0 0 5px;
-            -webkit-border-radius: 5px 0 0 5px;
-            -moz-border-radius: 5px 0 0 5px;
+            font-weight: 700;
+            color: rgba(0, 0, 0, 0.452);
+            margin-bottom: 2em;
+            margin-right: 5em;
         }
 
         @media (max-width: 1440px) {
@@ -164,14 +155,14 @@
 <body>
 <div class="shorten">
     <div class="s-bar">
+        <p class="result">https://url.francis.run</p>
+    </div>
+    <div class="s-bar">
         <form>
             <input name="link" type="text" value="https://francis.run" onfocus="this.value = '';"
                    onblur="if (this.value === '') {this.value = 'https://francis.run';}">
             <input id="submit" type="submit" value="Go"/>
         </form>
-    </div>
-    <div class="s-bar">
-        <p class="code">https://url.francis.run</p>
     </div>
 </div>
 </body>
