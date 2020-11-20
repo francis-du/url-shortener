@@ -1,4 +1,4 @@
-const secret_key="${{ secrets.SHORT_SECRET_KEY }}"
+const secret_key= process.env.SHORT_SECRET_KEY;
 const domain = "url.francis.run";
 const allowDuplicates = false;
 const re = "^[A-Za-z]+://[A-Za-z0-9-_]+\\.[A-Za-z0-9-_%&\?\/.=]+$";
@@ -10,9 +10,9 @@ export const html = `
 // Generate short link
 export async function urlShorten(request: Request) {
 
-    // if(secret_key ==""){
-    //     return echoShortUrl(rawHtmlResponse(), "Short.io API secret key is empty,please export SHORT_SECRET_KEY");
-    // }
+    if(secret_key ==""){
+        return echoShortUrl(rawHtmlResponse(), "Short.io API secret key is empty,please export SHORT_SECRET_KEY");
+    }
 
     // get params form url
     const originalURL = getUrlArg(request.url, "link");
