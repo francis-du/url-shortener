@@ -1,25 +1,28 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>URL Shorten</title>
+    <title>URL Shortener</title>
     <link rel="icon" href="https://simpleicons.org/icons/fujitsu.svg" type="image/x-icon"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <style type="text/css">
-        
         body {
-            height: 100%;width: 100%;margin:0;padding:0;
-            background: url(https://w.wallhaven.cc/full/dp/wallhaven-dpx573.png) no-repeat;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background: url(https://w.wallhaven.cc/full/q2/wallhaven-q2zpjr.jpg) no-repeat;
             background-size: cover;
             font-family: 'Open Sans', sans-serif;
             font-size: 100%;
-            background-attachment:fixed;
+            background-attachment: fixed;
         }
 
         .shorten {
             text-align: center;
-            margin-top: 20em;
+            width: 100%;
+            margin-top: 23%;
             position: relative
         }
 
@@ -31,10 +34,10 @@
         .s-bar input[type="text"] {
             font-size: 1.2em;
             font-weight: 600;
-            color:rgba(0, 0, 0, 0.452);
+            color: rgba(0, 0, 0, 0.452);
             padding: 1.3em 1em 1.3em 1.5em;
             width: 70%;
-            background: rgba(255, 255, 255, 0.479);
+            background: rgba(212, 205, 205, 0.48);
             border: 0;
             outline: 0;
         }
@@ -42,7 +45,7 @@
         .s-bar input[type="submit"] {
             font-size: 1.2em;
             font-weight: 600;
-            color: rgb(238, 227, 227);
+            color: rgb(121, 113, 113);
             padding: 1.3em .5em;
             width: 22%;
             text-align: center;
@@ -56,13 +59,13 @@
             border: 0;
             outline: 0;
             -webkit-appearance: none;
-            background: #068a48c7;
-            background: -moz-linear-gradient(top, #068a48c7 0, #068a48c7 37%, #068a48c7 66%, #068a48c7 100%);
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #068a48c7), color-stop(37%, #068a48c7), color-stop(66%, #068a48c7), color-stop(100%, #068a48c7));
-            background: -webkit-linear-gradient(top, #068a48c7 0, #068a48c7 37%, #068a48c7 66%, #068a48c7 100%);
-            background: -o-linear-gradient(top, #068a48c7 0, #068a48c7 37%, #068a48c7 66%, #068a48c7 100%);
-            background: -ms-linear-gradient(top, #068a48c7 0, #068a48c7 37%, #068a48c7 66%, #068a48c7 100%);
-            background: linear-gradient(to bottom, #068a48c7 0, #068a48c7 37%, #068a48c7 66%, #068a48c7 100%);
+            background: #FEB4A9;
+            background: -moz-linear-gradient(top, #FEB4A9 0, #FEB4A9 37%, #FEB4A9 66%, #FEB4A9 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FEB4A9), color-stop(37%, #FEB4A9), color-stop(66%, #FEB4A9), color-stop(100%, #FEB4A9));
+            background: -webkit-linear-gradient(top, #FEB4A9 0, #FEB4A9 37%, #FEB4A9 66%, #FEB4A9 100%);
+            background: -o-linear-gradient(top, #FEB4A9 0, #FEB4A9 37%, #FEB4A9 66%, #FEB4A9 100%);
+            background: -ms-linear-gradient(top, #FEB4A9 0, #FEB4A9 37%, #FEB4A9 66%, #FEB4A9 100%);
+            background: linear-gradient(to bottom, #FEB4A9 0, #FEB4A9 37%, #FEB4A9 66%, #FEB4A9 100%);
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1fd8de', endColorstr='#1fd8de', GradientType=0)
         }
 
@@ -79,8 +82,8 @@
             font-size: 1.3em;
             font-weight: 700;
             color: rgba(0, 0, 0, 0.452);
-            margin-bottom: 2em;
-            margin-right: 5em;
+            margin-bottom: 1em;
+            /*margin-right: 5em;*/
         }
 
         @media (max-width: 1440px) {
@@ -157,14 +160,15 @@
 <body>
 <div class="shorten">
     <div class="s-bar">
-        <p class="result">https://url.francis.run</p>
+        <p class="result"></p>
     </div>
     <div class="s-bar">
         <form>
             <input name="link" type="text" value="https://francis.run" onfocus="this.value = '';"
-            onblur="if (this.value === '') {this.value = 'https://francis.run';}">
-            <input id="submit" type="submit" value="Go"/>
+                   onblur="if (this.value === '') {this.value = 'https://francis.run';}">
+            <input id="submit" type="submit" value="Short"/>
         </form>
     </div>
+</div>
 </body>
 </html>
